@@ -164,6 +164,7 @@ print(f"Test '20': {get_user_status('20')}") # Expected: Adult (Currently crashe
 ```
 
 ### Automated/Fixed Code by LLM using Tool Calls
+```python
 def get_user_status(age):
     """
     Determine user age category based on age.
@@ -197,7 +198,7 @@ print(f"Test 65: {get_user_status(65)}")       # Expected: Senior
 print(f"Test 0: {get_user_status(0)}")         # Expected: Minor
 print(f"Test 64: {get_user_status(64)}")       # Expected: Adult
 print(f"Test 100: {get_user_status(100)}")     # Expected: Senior
-
+```
 ---
 
 ### 🟡 Level 2: Defensive JSON Handling
@@ -348,7 +349,6 @@ print("Test 4 (single):", find_duplicates([1, 2, 3]))  # Already tested
 # Test edge cases
 print("Test 5 (None):", find_duplicates(None))  # Expected: []
 print("Test 6 (string):", find_duplicates("abc"))  # Expected: []
-
 ```
 
 ---
