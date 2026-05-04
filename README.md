@@ -353,7 +353,3 @@ print("Test 6 (string):", find_duplicates("abc"))  # Expected: []
 
 ---
 
-### 💡 Summary for your "Results" Section
-> *"By running these three levels, the system proved it can move beyond simple syntax fixing. It demonstrated **Senior-level traits**: prioritizing system stability (Level 1), architecting for failure (Level 2), and optimizing for performance (Level 3)."*
-
-**Your README is going to look great with these! Is there anything else you need before you wrap up the "Cinema" project?**
