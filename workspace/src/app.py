@@ -1,3 +1,4 @@
+# Level 0 : buggy code
 def calculate_average(numbers):
 
     if not numbers:
@@ -8,3 +9,4 @@ def calculate_average(numbers):
 
 result = calculate_average([])
 print(result)
+

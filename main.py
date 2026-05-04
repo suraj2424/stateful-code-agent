@@ -44,7 +44,7 @@ app = workflow.compile()
 
 if __name__ == "__main__":
     initial_state : AgentState = {
-        "messages": [HumanMessage(content="Fix the bug in workspace/src/app.py and verify it works by running it.")]
+        "messages": [HumanMessage(content="Analyze workspace/src/app.py. The code is inefficient and handles edge cases poorly. Optimize the logic and ensure it doesn't crash on bad input.")]
     }
     
     # We use a config to set recursion limit

@@ -1,7 +1,7 @@
 from langchain_ollama import ChatOllama
 from tools.file_tools import tools
 
-llm = ChatOllama(model="qwen3.5:2b", temperature=0).bind_tools(tools)
+llm = ChatOllama(model="qwen3.5:2b").bind_tools(tools)
 
 def coder_node(state):
     messages = state["messages"]
