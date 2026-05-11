@@ -59,7 +59,7 @@ graph TD
     %% Flow Connections
     Coder <--> LLM
     Tester <--> LLM
-    
+
     %% Coder Flow
     Coder -- Calls Tool --> CoderTools
     CoderTools --> Tools
@@ -80,11 +80,21 @@ graph TD
     CoderTools -.-> Messages
     TesterTools -.-> Messages
 
-    %% Styling
-    style LLM fill:#f9f,stroke:#333,stroke-width:2px
-    style State fill:#e1f5fe,stroke:#01579b
-    style Start fill:#ccffcc
-    style End fill:#ffcccc
+    %% Softer Readable Styling
+    classDef agent fill:#f3f4f6,stroke:#4b5563,color:#111827,stroke-width:1.5px
+    classDef state fill:#e0f2fe,stroke:#0284c7,color:#0f172a,stroke-width:1.5px
+    classDef logic fill:#ede9fe,stroke:#7c3aed,color:#111827,stroke-width:1.5px
+    classDef tool fill:#fef3c7,stroke:#d97706,color:#111827,stroke-width:1.5px
+    classDef endpoint fill:#dcfce7,stroke:#16a34a,color:#111827,stroke-width:2px
+    classDef endnode fill:#fee2e2,stroke:#dc2626,color:#111827,stroke-width:2px
+
+    %% Apply Classes
+    class Coder,Tester agent
+    class Messages,FileStore state
+    class LLM logic
+    class CoderTools,TesterTools,Read,Write,Lint,Exec tool
+    class Start endpoint
+    class End endnode
 ```
 
 ## Project Structure
